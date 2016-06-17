@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+  xmlns:gap   = "http://phonegap.com/ns/1.0"
+  id          = "com.itconcept.cafeasia"
+  version     = "0.0.8" >
+
+  <name>Cafe Asia</name>
+  <author href="http://itconcept.sg" email="hoiyen@itconcept.sg">
+    Hoiyen
+  </author>
+
+  <!-- PLUGINS -->
+  <plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+  <plugin name="org.apache.cordova.splashscreen" spec="1.0.0" source="pgb" />
+  <plugin name="com.ionic.keyboard" spec="1.0.3" source="pgb" />
+  <plugin name="com.sharinglabs.cordova.plugin.cache" spec="1.0.0" source="pgb" />
+
+  <allow-navigation href="http://www.cafeasia.com.sg" />
+  <access origin="*" />
+
+  <preference name="orientation" value="portrait" />
+
+  <!-- PLATFORMS -->
+  <platform name="ios">
+
+    <!-- IOS 7+ -->
+    <!-- iPhone 6 / 6+ -->
+    <icon src="icons/icon-60@3x.png" width="180" height="180" />
+
+    <!-- iPhone / iPod Touch  -->
+    <icon src="icons/icon-60.png" width="60" height="60" />
+    <icon src="icons/icon-60@2x.png" width="120" height="120" />
+
+    <!-- iPad -->
+    <icon src="icons/icon-76.png" width="76" height="76" />
+    <icon src="icons/icon-76@2x.png" width="152" height="152" />
+
+    <!-- Settings Icon -->
+    <icon src="icons/icon-small.png" width="29" height="29" />
+    <icon src="icons/icon-small@2x.png" width="58" height="58" />
+
+    <!-- Spotlight Icon -->
+    <icon src="icons/icon-40.png" width="40" height="40" />
+    <icon src="icons/icon-40@2x.png" width="80" height="80" />
+
+    <!-- IOS 6+ -->
+    <!-- iPhone / iPod Touch -->
+    <icon src="icons/icon.png" platform="ios" width="57" height="57" />
+    <icon src="icons/icon@2x.png" platform="ios" width="114" height="114" />
+
+    <!-- iPad -->
+    <icon src="icons/icon-72.png" platform="ios" width="72" height="72" />
+    <icon src="icons/icon-72@2x.png" platform="ios" width="144" height="144" />
+
+    <!-- iPad Spotlight and Settings Icon -->
+    <icon src="icons/icon-50.png" platform="ios" width="50" height="50" />
+    <icon src="icons/icon-50@2x.png" platform="ios" width="100" height="100" />    
+
+    <!-- Splash -->
+    <!-- iPhone and iPod touch -->
+    <splash src="icons/Default.png" width="320" height="480" />
+    <splash src="icons/Default@2x.png" width="640" height="960" />
+
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
+    <splash src="icons/Default-568h@2x.png" width="640" height="1136" />
+
+    <!-- iPhone 6 -->
+    <splash src="icons/Default-667h@2x.png" width="750" height="1334" />
+    <splash src="icons/Default-Portrait-736h@3x.png" width="1242" height="2208" />
+    <splash src="icons/Default-Landscape-736h@3x.png" width="2208" height="1242" />
+
+    <!-- iPad -->
+    <splash src="icons/Default-Portrait.png" width="768" height="1024" />
+    <splash src="icons/Default-Landscape.png" width="1024" height="768" />
+
+    <!-- Retina iPad -->
+    <splash src="icons/Default-Portrait@2x.png" width="1536" height="2048" />
+    <splash src="icons/Default-Landscape@2x.png" width="2048" height="1536" />
+
+  </platform>
+</widget>

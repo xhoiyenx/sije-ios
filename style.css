@@ -1,0 +1,151 @@
+html, body, .body, iframe {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+iframe {
+	width: 100%;
+	max-width: 100%;
+	border: none;
+	display: block;
+}
+.body {
+	position: relative;
+	height: calc(100% - 100px);
+}
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.menu {
+	position: fixed;
+	bottom: 0;
+}
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.menu ul li {
+	float: left;
+	width: 20%;
+	background-color: #000;
+}
+.menu ul li a {
+	display: block;
+}
+.menu ul li img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.menu .submenu {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	display: none;
+}
+.menu .submenu li {
+	width: 50%;
+	background-color: #E3001B;
+	text-align: center;
+}
+.menu .submenu li a {
+	color: #FFF;
+	text-decoration: none;
+	font-family: tahoma;
+	display: block;
+}
+.submenu img {
+	height: 50px;
+	width: auto;
+}
+/**
+ * Preloader for mobile
+ */
+#myiframe {
+	background: transparent;
+	z-index: 9999;
+}
+.preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.8;
+	z-index: -1;
+}
+#loader {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #3498db;
+	-webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+	animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+	z-index: 1002;
+}
+#loader:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #e74c3c;
+	-webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+	animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+#loader:after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f9c922;
+	-webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+	animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(0deg);  /* IE 9 */
+		transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+	100% {
+		-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(360deg);  /* IE 9 */
+		transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+}
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(0deg);  /* IE 9 */
+		transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+	100% {
+		-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+		-ms-transform: rotate(360deg);  /* IE 9 */
+		transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+	}
+}

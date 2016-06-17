@@ -15,7 +15,7 @@
   <plugin name="com.ionic.keyboard" spec="1.0.3" source="pgb" />
   <plugin name="com.sharinglabs.cordova.plugin.cache" spec="1.0.0" source="pgb" />
 
-  <allow-navigation href="http://www.cafeasia.com.sg" />
+  <allow-navigation href="http://sije.itc2.clientsdemo.net" />
   <access origin="*" />
 
   <preference name="orientation" value="portrait" />

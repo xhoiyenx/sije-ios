@@ -1,4 +1,4 @@
-var $baseUrl = 'http://www.cafeasia.com.sg';
+var $baseUrl = 'http://sije.itc2.clientsdemo.net';
 $(document).ready(function() {
 	
 	// Phonegap loaded
